@@ -1,4 +1,4 @@
-# Network Setup: VPC, Subnet, IGW, Routes | network.tf
+# Network Setup | network.tf
 data "aws_availability_zones" "aws-az" {
   state = "available"
 }
