@@ -1,0 +1,1 @@
+# Recipe for AWS fargate wordpress deployment
