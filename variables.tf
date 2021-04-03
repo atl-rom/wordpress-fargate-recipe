@@ -5,7 +5,11 @@ variable "server_region" {
   type        = string
   default     = "us-west-2"
 }
-
+variable "aws_region" {
+  description = "Region to deploy server"
+  type        = string
+  default     = "us-west-2"
+}
 
 variable "app_name" {
   type        = string
@@ -17,7 +21,7 @@ variable "app_environment" {
   description = "Application environment"
   default     = "wp-test"
 }
-variable "admin_sources_cidr" {
+/* variable "admin_sources_cidr" {
   type        = list(string)
   description = "List of IPv4 CIDR blocks from which to allow admin access"
   default     = ["0.0.0.0/0"]
@@ -26,4 +30,4 @@ variable "app_sources_cidr" {
   type        = list(string)
   description = "List of IPv4 CIDR blocks from which to allow application access"
   default     = ["0.0.0.0/0"]
-}
+} */
